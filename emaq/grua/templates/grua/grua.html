@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Gruas{% endblock %}
+
+{% block content %}
+
+{% for grua in series.get_grua.all %}
+  <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-innerv text-center rounded">
+            <h2 class="section-heading mb-5">
+              <span class="section-heading-under">  
+              {% for serie in grua.categories.all %}
+                <a href="{% url 'grua' serie.id %}" class="link">{{serie.name}}</a>
+              {% endfor %}
+              </span>
+              <span class="section-heading-lower">{{grua.name}}</span>
+            </h2>
+            <p class="mb-0">
+              <img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{grua.image.url}}" alt="">
+            </p>
+            <br>
+            <p >Altura Maxima de Grua: {{grua.maxalto}} Metros</p>
+            <p > Largo Maximo de Grua: {{grua.maxlargo}} Metros</p>
+            <p >Carga Maxima de Grua : {{grua.maxcarga}} Tons</p>
+            <p >{{grua.content|linebreaks}}</p>
+            <a class="btn btn-primary btn-xl" href="{{grua.doc.url}}" class="link">Catalogo {{grua.name}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endfor %}
+
+{% endblock %}
