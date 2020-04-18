@@ -1,2 +1,3 @@
 # paginaemaq
-Primer borrador de la pagina web Emaq, django 2.1.5
+Primer borrador de la pagina web Emaq:
+python3.7 django==2.1.5
