@@ -7,6 +7,3 @@ def home(request):
 
 def ubication(request):
   return render(request,"core/ubication.html")
-
-def contact(request):
-  return render(request,"core/contact.html")

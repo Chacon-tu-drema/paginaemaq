@@ -1,9 +1,10 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 class Serie(models.Model):
   name=models.SlugField(verbose_name="Nombre Serie", max_length=100, unique=True)
-  content = models.TextField(verbose_name="Resumen")
+  content = RichTextField(verbose_name="Resumen")
   image=models.ImageField(verbose_name="Imagen",upload_to="grua/serie")
   created = models.DateTimeField(auto_now_add=True, verbose_name="Fecha de creación")
   updated = models.DateTimeField(auto_now=True, verbose_name="Fecha de edición")
@@ -18,7 +19,7 @@ class Serie(models.Model):
 
 class Grua(models.Model):
   name = models.CharField(verbose_name="Nombre Grua", max_length=100, unique=True)
-  content = models.TextField(verbose_name="Descripcion")
+  content = RichTextField(verbose_name="Descripcion")
   maxalto = models.DecimalField(verbose_name="Alto Maximo", max_digits=5, decimal_places=1)
   maxlargo = models.DecimalField(verbose_name="Largo Maximo", max_digits=5, decimal_places=1)
   maxcarga = models.DecimalField(verbose_name="Carga Maximo", max_digits=5, decimal_places=1)

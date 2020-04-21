@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    #CKEDITOR
+    'ckeditor',
+
     # Personales
+    'contact',
     'core',
     'grua',
     'historia.apps.HistoriaConfig',
@@ -131,3 +135,22 @@ STATIC_URL = '/static/'
 # Media config
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#CKEDITOR
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['Bold', 'Italic', 'Underline'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['Link', 'Unlink'],
+            ['RemoveFormat', 'Source']
+        ]
+    }
+}
+
+#Email config
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = '30ecdc54a020dc'
+EMAIL_HOST_PASSWORD = 'cced6850b9a20a'
+EMAIL_PORT = '2525'
