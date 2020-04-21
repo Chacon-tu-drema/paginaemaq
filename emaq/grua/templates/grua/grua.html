@@ -27,7 +27,7 @@
             <p >Altura Maxima de Grua: {{grua.maxalto}} Metros</p>
             <p > Largo Maximo de Grua: {{grua.maxlargo}} Metros</p>
             <p >Carga Maxima de Grua : {{grua.maxcarga}} Tons</p>
-            <p >{{grua.content|linebreaks}}</p>
+            <p >{{grua.content|safe}}</p>
             <a class="btn btn-primary btn-xl" href="{{grua.doc.url}}" class="link">Catalogo {{grua.name}}</a>
           </div>
         </div>

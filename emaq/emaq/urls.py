@@ -20,6 +20,8 @@ from django.conf import settings
 urlpatterns = [
     #PATH ABOUT
     path('about/',include('historia.urls')),
+    #PATH CONTACT
+    path('contact/',include('contact.urls')),
     #PATH CORE
     path('',include('core.urls')),
     #PATH GRUA
