@@ -1,9 +1,6 @@
 body {
-  font-family: 'Lora';
-  background: linear-gradient(
-      rgba(27, 20, 116, 0.65),
-      rgba(255, 255, 255, 0.65)
-    ),
+  font-family: 'Helvetica';
+  background: linear-gradient(rgba(0, 79, 124, 0.5), rgba(255, 255, 240, 0)),
     url('../img/bg.jpg');
   background-attachment: fixed;
   background-position: center;
@@ -16,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway';
+  font-family: 'Impact';
 }
 
 p {
@@ -24,7 +21,7 @@ p {
 }
 
 .text-faded {
-  color: rgba(168, 166, 191, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .site-heading {
@@ -32,7 +29,7 @@ p {
   margin-bottom: 5rem;
   text-transform: uppercase;
   line-height: 1;
-  font-family: 'Raleway';
+  font-family: 'Impact';
 }
 
 .site-heading .site-heading-upper {
@@ -78,25 +75,25 @@ p {
 }
 
 .bg-faded {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 240, 0.9);
 }
 
 #mainNav {
-  background-color: rgba(27, 20, 116, 0.9);
+  background-color: rgba(0, 79, 124);
   font-family: 'Raleway';
 }
 
 #mainNav .navbar-brand {
-  color: #a8a6bf;
+  color: #fffff0;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: rgba(168, 166, 191, 0.8);
+  color: rgba(255, 255, 240, 0.8);
   font-weight: 800;
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #51505c;
+  color: #000000;
 }
 
 @media (min-width: 992px) {
@@ -104,11 +101,16 @@ p {
     font-size: 0.9rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(0, 0, 0, 0.7);
   }
+
+  /* Color que toma cuando se le pone encima el mouse */
+
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #51505c;
+    color: #000000;
   }
+
+  /* Color que toma cuando se activa en la pagina que esta */
 }
 
 .btn-xl {
@@ -152,14 +154,14 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgba(27, 20, 116, 0.9);
+  background-color: rgba(0, 79, 124);
 }
 
 .cta .cta-inner {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 240, 0.8);
 }
 
 .cta .cta-inner:before {
@@ -170,14 +172,14 @@ p {
   bottom: -0.5rem;
   left: -0.5rem;
   right: -0.5rem;
-  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+  border: 0.25rem solid rgba(0, 0, 0, 0.8);
 }
 
 .cta .cta-innerv {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 240, 0.9); /* fondo de las gruas */
 }
 
 @media (min-width: 992px) {
@@ -216,7 +218,7 @@ p {
 }
 
 .list-hours .list-hours-item {
-  border-bottom: 1px solid rgba(168, 166, 191, 0.5);
+  border-bottom: 1px solid rgba(168, 166, 191, 0.5); /* no se que es */
   padding-bottom: 0.25rem;
   margin-bottom: 1rem;
   font-style: italic;
@@ -224,7 +226,7 @@ p {
 
 .list-hours .list-hours-item.today {
   font-weight: bold;
-  color: #1b1474;
+  color: #004f7c; /* no se que es */
 }
 
 @media (min-width: 992px) {
@@ -239,15 +241,15 @@ p {
 }
 
 .footer {
-  background-color: rgba(27, 20, 116, 0.9);
+  background-color: rgba(0, 79, 124);
 }
 
 .text-primary {
-  color: #1b1474 !important;
+  color: #000000 !important;
 }
 
 .bg-primary {
-  background-color: #1b1474 !important;
+  background-color: #004f7c !important;
 }
 
 .btn {
@@ -255,15 +257,15 @@ p {
 }
 
 .btn-primary {
-  background-color: #1b1474;
-  border-color: #1b1474;
+  background-color: #004f7c;
+  border-color: #004f7c;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background-color: #0f4380;
-  border-color: #0f4380;
+  background-color: #00273d;
+  border-color: #00273d;
 }
 
 .font-weight-light {
@@ -283,12 +285,12 @@ p {
 }
 
 a.link {
-  color: #a8a6bf;
+  color: #000000;
 }
 
 a.link:hover {
   text-decoration: none;
-  color: #51505c !important;
+  color: #00273d !important;
 }
 
 .section-content {
