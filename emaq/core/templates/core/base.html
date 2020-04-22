@@ -47,7 +47,7 @@
             <li class="nav-item px-lg-4 {% if request.path == '/about/' %}active{% endif %}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'about' %}">Historia</a>
             </li>
-            <li class="nav-item px-lg-4 {% if request.path == '/series/' %}active{% endif %}">
+            <li class="nav-item px-lg-4 {% if request.path == '/series/' %}active{% endif %} {% block grua %}{% endblock %}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'serie' %}">Gruas</a>
             </li>
             <li class="nav-item px-lg-4 {% if request.path == '/ubication/' %}active{% endif %}">
